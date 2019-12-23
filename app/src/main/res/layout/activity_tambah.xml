@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activity.TambahActivity">
+
+    <TextView
+        android:id="@+id/tvNamaEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Nama Event"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editNamaEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaEvent"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Event"
+        android:textStyle="bold"
+        android:layout_below="@id/editNamaEvent"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/btnTanggalEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTanggal"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="Pilih Tanggal"/>
+
+    <TextView
+        android:id="@+id/tvTanggalDipilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTanggal"
+        android:text="Tanggal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/btnTanggalEvent"/>
+
+    <TextView
+        android:id="@+id/tvKeteranganEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTanggalEvent"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Keterangan"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editKeteranganEvent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvKeteranganEvent"
+        android:layout_marginTop="10dp"
+        android:inputType="textMultiLine"/>
+
+    <TextView
+        android:id="@+id/tvWaktuMulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editKeteranganEvent"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Waktu Mulai"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnWaktuMulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWaktuMulai"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:text="Pilih Waktu Mulai"/>
+
+    <TextView
+        android:id="@+id/tvWaktuMulaiDipilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWaktuMulai"
+        android:text="Waktu"
+        android:layout_toEndOf="@id/btnWaktuMulai"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/tvWaktuSelesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnWaktuMulai"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Waktu Selesai"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnWaktuSelesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWaktuSelesai"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:text="Pilih Waktu Selesai"/>
+
+    <TextView
+        android:id="@+id/tvWaktuSelesaiDipilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWaktuSelesai"
+        android:text="Waktu"
+        android:layout_toEndOf="@id/btnWaktuSelesai"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/btnSubmitTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="Tambah Event"/>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activity.DetailActivity">
+
+    <TextView
+        android:id="@+id/tvTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Event"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/tvIDDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvTitleID"
+        android:text="ID"
+        android:textSize="16sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Event"
+        android:layout_below="@id/tvTitleID"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/tvNamaDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:layout_below="@id/tvIDDetail"
+        android:layout_toEndOf="@id/tvTitleNama"
+        android:layout_marginLeft="65dp"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/btnKembaliDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Kembali"/>
+
+</RelativeLayout>

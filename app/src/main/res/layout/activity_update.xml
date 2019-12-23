@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activity.UpdateActivity">
+
+    <TextView
+        android:id="@+id/tvIdEventUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="ID Event"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editIdEventUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvIdEventUpdate"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvNamaEventUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editIdEventUpdate"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Nama Event"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editNamaEventUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaEventUpdate"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/tvTanggalUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Event"
+        android:textStyle="bold"
+        android:layout_below="@id/editNamaEventUpdate"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/btnTanggalEventUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTanggalUpdate"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:text="Pilih Tanggal"/>
+
+    <TextView
+        android:id="@+id/tvTanggalDipilihUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:layout_below="@id/tvTanggalUpdate"
+        android:layout_toEndOf="@id/btnTanggalEventUpdate"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tvKeteranganUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTanggalEventUpdate"
+        android:text="Keterangan"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editKeteranganUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvKeteranganUpdate"
+        android:layout_marginTop="10dp"
+        android:inputType="textMultiLine"/>
+
+    <TextView
+        android:id="@+id/tvWaktuMulaiUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu Mulai"
+        android:layout_below="@id/editKeteranganUpdate"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnWaktuMulaiUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWaktuMulaiUpdate"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:text="Pilih Waktu Mulai" />
+
+    <TextView
+        android:id="@+id/tvWaktuMulaiDipilihUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu"
+        android:layout_below="@id/tvWaktuMulaiUpdate"
+        android:layout_toEndOf="@id/btnWaktuMulaiUpdate"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/tvWaktuSelesaiUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu Selesai"
+        android:textStyle="bold"
+        android:layout_below="@id/btnWaktuMulaiUpdate"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/btnWaktuSelesaiUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWaktuSelesaiUpdate"
+        android:layout_marginTop="10dp"
+        android:text="Pilih Waktu Selesai"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/tvWaktuSelesaiDipilihUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu"
+        android:layout_below="@id/tvWaktuSelesaiUpdate"
+        android:layout_toEndOf="@id/btnWaktuSelesaiUpdate"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="Update"/>
+
+</RelativeLayout>
